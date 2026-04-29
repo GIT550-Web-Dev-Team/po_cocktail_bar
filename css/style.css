@@ -39,6 +39,9 @@ header, footer{
 
 /* ----------BODY----------*/
 
+.body {
+    line-height: 1.5;
+}
 
 .top {
     background-color: var(--obsidian);
@@ -53,13 +56,15 @@ img {
 
 h2 {
     font-size: 27pt;
-    font-family: var(--font-body);
+    font-family: var(--font-header);
+    padding: 20px;
 }
 
 .ingredients {
     font-size: 16pt;
-    font-family: var(--font-body);
+    font-family: var(--font-header);
     color: var(--ember);
+    padding-bottom: 20px;
 }
 
 p {
@@ -74,4 +79,5 @@ p {
         var(--obsidian) 50%,
         var(--obsidian) 100%
     );
+    padding: 30px;
 }
