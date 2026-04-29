@@ -184,29 +184,31 @@ body {
                     height: auto;
                 }
 
+                .circle {
+                    width: 180px;
+                    height: 180px;
+                    background: var(--text-bone);
+                    border-radius: 55%;
+                    border: 14px solid var(--smoke-violet);
+                    position: absolute;
+                    top: -130px;
+                    transform: translate(-50%);
+                    left: 50%;
+                    align-content: center;
+                }
+
     /* Story Section */
 .story {
-    background: linear-gradient(var(--smoke-violet) 12%, var(--obsidian) 80%);
+    background: linear-gradient(var(--smoke-violet) 10%, var(--obsidian) 85%);
     text-align: center;
     padding: 80px 20px 60px;
     position: relative;
     font-weight: 700;
-}
-
-.circle {
-    width: 180px;
-    height: 180px;
-    background: var(--text-bone);
-    border-radius: 55%;
-    border: 14px solid var(--smoke-violet);
-    position: absolute;
-    top: -140px;
-    transform: translate(-50%);
-    left: 50%;
-    align-content: center;
+    margin-top: 145px; /* increase this */
 }
 
 .story h2 {
+    margin-top: 20px;
     margin-bottom: 25px;
     font: var(--font-header);
     font-size: 27px;
