@@ -40,8 +40,8 @@ main {
 .menu h1 {
     font-family: var(--font-header);
     font-size: 35pt;
-    margin-bottom: 40px;
     background-color: var(--obsidian);
+    padding: 30px;
 }
 
 /* ---------- CAROUSEL ---------- */
