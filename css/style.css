@@ -31,7 +31,7 @@
 ================================================== */
 /* ----------BODY---------- */
 header, main, footer{
-    background-image: url("../images/Background_Icon.png");
+    background-image: url("../images/Background1_Icon.png");
     background-repeat: repeat-y;
     background-size: cover;
 }
