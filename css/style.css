@@ -14,9 +14,10 @@ header, footer{
     background-size: cover;
 }
 
-#title h1 {
+.title h1 {
     background-color: var(--obsidian);
     padding: 20px 30px;
+    text-align: center;
 }
 
 #left, #right, #circle, #center {
