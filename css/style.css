@@ -79,7 +79,7 @@ p {
     #left, #right {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: 300px auto;
     }
 
         #left .shape {
@@ -153,3 +153,18 @@ p {
         }
 
     
+/* ==================================================
+                    MEDIA STYLES
+================================================== */
+
+/*----------(MOBILE FIRST (SMALL QUERIES) applies to the whole page)----------*/
+
+
+
+            /* ----------MEDIA QUERIES (MEDIUM)---------- */
+
+@media (max-width: 600px) {
+    #left, #right {
+        grid-template-rows: 200px auto;
+    }
+}
