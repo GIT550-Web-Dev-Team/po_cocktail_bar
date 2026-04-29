@@ -7,7 +7,7 @@
 
 
 /* ----------BODY----------*/
-html{
+head, header, footer{
     background-image: url("images/Background1_PO.png");
     background-repeat: repeat-y;
 }
