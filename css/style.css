@@ -13,13 +13,6 @@ head, header, footer{
 }
 
 
-.title {
-    background: none;
-}
-
-
-
-
 #left, #right, #circle, #center {
     background: linear-gradient(
         to bottom, 
