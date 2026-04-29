@@ -16,7 +16,7 @@
 }
 
 /* ==================================================
-                    GLOBAL
+                    MENU SECTION
 ================================================== */
 
 body {
@@ -26,11 +26,6 @@ body {
     color: var(--text-bone);
 }
 
-header, main, footer {
-    background-image: url("../images/Background_Icon.png");
-    background-repeat: repeat-y;
-    background-size: cover;
-}
 
 main {
     max-width: 1200px;
@@ -38,16 +33,9 @@ main {
     padding: 20px;
 }
 
-/* ==================================================
-                    MENU SECTION
-================================================== */
 
 .menu {
-    text-align: center;
-    padding: 3rem 1.5rem;
-    background: 
-        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
-        url('../images/Asset 1.png'); 
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url('../images/Asset 1.png');
     background-repeat: repeat;
     background-size: 600px;
 }
@@ -64,6 +52,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
+    padding: 3rem 1.5rem;
+
 }
 
 /* Optional scrollbar styling */
@@ -120,25 +111,38 @@ main {
 ================================================== */
 
 footer {
-    padding: 40px 20px;
+    background-color: var(--obsidian);
+    padding: 3rem 1.5rem;
+    border-top: 1px solid var(--smoke-violet);
+    text-align: left;
 }
 
-.footer {
+.footer-grid {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
 }
 
-.footer h2 {
-    font-family: var(--font-header);
-    font-size: 20pt;
+.footer-address h2, .footer-social h2 {
+    font-size: 1.2rem;
+    color: var(--muted-gold);
+    margin-bottom: 0.8rem;
 }
 
-.footer p, .footer a {
-    font-size: 12pt;
-    color: var(--text-bone);
-    text-decoration: none;
+.footer-subhead, .footer-contact-head {
+    font-size: 1.2rem;
+    color: var(--muted-gold);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+    color: var(--ember);
 }
 
 /* ==================================================
