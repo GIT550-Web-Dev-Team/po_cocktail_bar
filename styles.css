@@ -57,11 +57,6 @@ table {
     --font: 'Roboto', arial, sans-serif;
 }
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /*----------NAV----------*/
 
@@ -193,10 +188,7 @@ body{
     line-height: 1.5;
 }
 
-main{
-    padding: 2rem 1rem;
-    justify-content: center;
-}
+
 
 h1{
     text-align: center;
@@ -238,6 +230,21 @@ header {
     font-size: var(--font-body);
 }
 /* --------------Menu section------------- */
+.card{
+    display: block;
+    background-color: var(--uliuli);
+    width: 100%;
+    border-radius: 1rem;
+    margin: 0 0 3rem 0;
+}
+
+#circle img{
+    border-radius: 50%;
+}
+
+.shape.beige{
+    border-radius: 50%;
+}
 
 /*FOOTER */
 
