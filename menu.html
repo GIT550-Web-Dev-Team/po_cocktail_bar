@@ -13,66 +13,82 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/sju4mhj.css">
 
+        <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
-        <header>
-            <div class="container title">
+    <header>
+        <div class="container title">
             <div class="logo-and-title">
-                    <img src="Images/Po_Icons.png" alt="company logo" width="149" height="138">
+                <img src="images/Po-Horizontal.png" alt="Po Logo">
             </div>
+            <nav class="navigation">
+                        <input type="checkbox" id="hamburger">
+                        <label for="hamburger"><span></span></label>
+                        <ul class="dropdown-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="cocktails.html">Cocktails</a></li>
+                            <li><a href="events.html">Event Calendar</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    </header>
 
-                <nav class="navigation">
-                    <input type="checkbox" id="hamburger">
-                    <label for="hamburger"><span></span></label>
-                    <ul class="dropdown-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Our Story</a></li>
-                        <li><a href="cocktails.html">Cocktails</a></li>
-                        <li><a href="events.html">Event Calendar</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
-                    </ul>
-                </nav>
-
-            </div> 
-        </header>
 
         <main>
             <h1>Cocktail</h1>
-
-            <section id="group_1">
-                <img src="Images/Coctail1_V1.jpeg" alt="drink on the table" width="400" height="500">
-                <div>
-                    <h3>Cocktail, 12</h3>
-                    <p>Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
-                    <p>drink description</p>
+            <!-- CARD 1 -->
+            <section id="cocktail_left">
+                    <div class="shape"></div>
+                    <img src="Images/Coctail1_V1.jpeg" alt="drink on the table" height="1024" width="1032">
+                <div class="card">
+                    <h3>Cocktail, 10</h3>
+                    <p class="ingredients">Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
                 </div>
             </section>
-            <section id="group_2">
-              <img src="Images/Coctail2_V1.JPG" alt="drink on the table" width="400" height="500">
-                <div>
+<!-- CARD 2             -->
+
+            <section id="cocktail_right">
+                    <div class="shape"></div>
+                    <img src="Images/Coctail2_V1.JPG" alt="drink sitting on the table" height="1151" width="1151">
+                <div class="card">    
                     <h3>Cocktail, 14</h3>
-                    <p>Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
-                    <p>drink description</p>
+                    <p class="ingredients">Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
+                </div>
             </section>
-            <section id="group_3">
-              <img src="Images/Smokey_V1.jpg" alt="drink on the table" width="300" height="500">
-                <div>
+
+            <!-- CARD 3 -->
+
+            <section id="Cocktail_circle">
+                    <div class="shape beige"></div>
+                    <img src="Images/soda_V1.jpg" alt="drink sitting on the table" height="1020" width="1020">
                     <h3>Cocktail, 10</h3>
-                    <p>Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
-                    <p>drink description</p>
+                <div class="card circle">
+                    <p class="ingredients">Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
+                </div>
             </section>
-            <section id="group_4">
-              <img src="Images/soda_V1.jpg" alt="drink on the table" width="400" height="400">
-                <div>
-                    <h3>Cocktail, 14</h3>
-                    <p>Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
-                    <p>drink description</p>
+
+            <!-- CARD 4 -->
+             
+            <section id="Cocktail_center">
+                    <div class="shape circle"></div>
+                    <img src="Images/Smokey_V1.jpg" alt="drink on the table" height="1151" width="1151">
+                <div class="card">    
+                    <h3>Cocktails, 14</h3>
+                    <p class="ingredients">Rum, Lime, Pineapple, Fresh Lychee, and Splash of Mango Sparkling water</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
+                </div>
             </section>
 
         </main>
-
+<!-- FOOTER -->
         <footer>
             <div class="container footer">
                 <section class="footer-address">
