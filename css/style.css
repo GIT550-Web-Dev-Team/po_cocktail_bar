@@ -56,10 +56,8 @@ main {
 
 .carousel-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 20px;
-    scroll-snap-type: x mandatory;
 }
 
 /* Optional scrollbar styling */
@@ -75,8 +73,6 @@ main {
 /* ---------- CARD ---------- */
 
 .cocktail-card {
-    min-width: 280px;
-    max-width: 280px;
     background: linear-gradient(
         to bottom,
         var(--smoke-violet),
@@ -85,8 +81,6 @@ main {
     border-radius: 20px;
     padding: 20px;
     text-align: left;
-    scroll-snap-align: start;
-    flex-shrink: 0;
 }
 
 .card-img-placeholder {
@@ -156,5 +150,33 @@ footer {
 
     .menu h1 {
         font-size: 28pt;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .carousel-container {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .cocktail-card {
+        min-width: 280px;
+        max-width: 280px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .carousel-container::-webkit-scrollbar-thumb {
+        background: var(--ember);
+        border-radius: 10px;
     }
 }
