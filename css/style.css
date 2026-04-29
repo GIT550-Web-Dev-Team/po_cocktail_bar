@@ -20,6 +20,11 @@ header, footer{
     padding: 30px;
 }
 
+h2 {
+    font-size: 27px;
+    font-family: var(--font-header);
+}
+
 #left, #right, #circle, #center {
     background: linear-gradient(
         to bottom, 
