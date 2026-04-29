@@ -137,11 +137,9 @@ body {
 
     header {
         display: block;
-        padding-bottom: 11rem;
+        padding: 0;
         margin: 0;
         font-family: var(--font-header);
-        position: relative;
-        z-index: 1;
     }
 
         h1 {
@@ -191,7 +189,7 @@ body {
                     border-radius: 55%;
                     border: 14px solid var(--smoke-violet);
                     position: absolute;
-                    top: -130px;
+                    top: -150px;
                     transform: translate(-50%);
                     left: 50%;
                     align-content: center;
@@ -208,7 +206,7 @@ body {
 .story {
     background: linear-gradient(var(--smoke-violet) 10%, var(--obsidian) 85%);
     text-align: center;
-    padding: 80px 20px 60px;
+    padding: 75px 15px 60px;
     position: relative;
     font-weight: 700;
     margin-top: 145px;
@@ -447,9 +445,9 @@ footer {
 
     
     .circle {
-        width: 195px;
-        height: 195px;
-        top: -140px;
+        width: 190px;
+        height: 190px;
+        top: -150px;
     }
 
     .story {
