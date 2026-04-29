@@ -183,8 +183,8 @@ body {
                 }
 
                 .circle {
-                    width: 180px;
-                    height: 180px;
+                    width: 190px;
+                    height: 190px;
                     background: var(--text-bone);
                     border-radius: 55%;
                     border: 14px solid var(--smoke-violet);
@@ -409,8 +409,8 @@ footer {
     }
 
     .circle {
-        width: 185px;
-        height: 185px;
+        width: 195px;
+        height: 195px;
         top: -150px;
     }
 
@@ -445,8 +445,8 @@ footer {
 
     
     .circle {
-        width: 190px;
-        height: 190px;
+        width: 210px;
+        height: 210px;
         top: -150px;
     }
 
