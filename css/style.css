@@ -62,6 +62,7 @@ img {
     height: 509px;
     object-fit: cover;
     display: block;
+    align-items: center;
 }
 
 h2 {
