@@ -88,6 +88,7 @@ p {
     #left, #right {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: 300px auto;
     }
 
         #left .shape {
@@ -173,16 +174,11 @@ p {
 
 @media (max-width: 600px) {
     #left, #right {
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr; /* keep 2 columns */
+        grid-template-rows: 200px auto;
     }
 
-    #left .shape,
-    #left img,
-    #left .card,
-    #right .shape,
-    #right img,
-    #right .card {
-        grid-column: 1;
+    #left, #right {
+        padding: 15px;
     }
 }
