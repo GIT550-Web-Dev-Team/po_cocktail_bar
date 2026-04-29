@@ -139,43 +139,39 @@ body {
     line-height: 1.5;
     }
 
-    header {
-        display: block;
-        padding: 0;
-        margin: 0;
-        font-family: var(--font-header);
-    }
 
-        h1 {
-            font-size: 35pt;
-            text-align: center;
-        }
-
-        .title {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            padding: 20px 0;
-            margin: 0;
-            width: 100%;
-}
-
-            .logo-and-title {
-                display: flex;
-                padding-left: 20px;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
+                header {
+                    background-color: var(--smoke-violet);
+                    border-bottom: 1px solid var(--muted-gold);
+                }
+                
+                .title {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    padding: 15px 0;
+                    width: 100%;
+                }
+                
+                .logo-and-title {
+                    display: flex;
+                    padding-left: 20px;
+                    align-items: center;
+                }
+                
                 .logo-and-title h1 {
-                    font-weight: bolder;
-                    font-size: 35pt;
+                    font-size: 2rem;
+                    margin: 0;
+                    color: var(--muted-gold);
+                    letter-spacing: 2px;
                 }
-
-                .logo-and-title p {
-                    font-size: var(--font-body);
+                
+                .logo-and-title img {
+                    height: 60px;      
+                    width: auto;       
+                    display: block;
+                    max-width: 100%;  
                 }
-
 /*----------NAV----------*/
 
 .navigation {
@@ -209,7 +205,7 @@ body {
         }
 
         .navigation li:hover, .navigation a:hover {
-            color: var(--bone);
+            color: var(--obsidian);
             background-color: var(--ember);
         }
 
@@ -330,6 +326,7 @@ footer {
             text-align: center;
             font-size: 16pt;
             font-family: var(--font-header);
+            color: var(--muted-gold);
         }
 
         .footer h3 {
@@ -435,7 +432,7 @@ footer {
     .navigation a {
         display: inline-block;
         padding: 10px 20px;
-        color: var(--bone);
+        color: var(--blue);
         text-decoration: none;
         font-weight: normal;
         text-align: center;
@@ -446,8 +443,8 @@ footer {
     }
 
     .navigation a:hover {
-        background-color: var(--ember);
-        color: var(--bone);
+        background-color: var(--blue);
+        color: var(--black)
     }
 
     #hamburger {
@@ -506,7 +503,7 @@ footer {
     .navigation a {
         display: inline-block;
         padding: 10px 20px;
-        color: var(--bone);
+        color: var(--blue);
         text-decoration: none;
         font-weight: normal;
         text-align: center;
@@ -517,8 +514,8 @@ footer {
     }
 
     .navigation a:hover {
-        background-color: var(--ember);
-        color: var(--bone);
+        background-color: var(--blue);
+        color: var(--black)
     }
 
     #hamburger {

@@ -128,19 +128,20 @@ body {
     color: var(--text-bone);
 }
 
+/* 
     .container {
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         line-height: 1.5;
-    }
-
+    } */
+/* 
     header {
         display: block;
         padding: 0;
         margin: 0;
         font-family: var(--font-header);
-    }
+    } */
 
         h1 {
             font-size: 35pt;
@@ -183,13 +184,13 @@ body {
                 }
 
                 .circle {
-                    width: 190px;
-                    height: 190px;
+                    width: 165px;
+                    height: 165px;
                     background: var(--text-bone);
                     border-radius: 55%;
-                    border: 14px solid var(--smoke-violet);
+                    border: 10px solid var(--smoke-violet);
                     position: absolute;
-                    top: -150px;
+                    top: -100px;
                     transform: translate(-50%);
                     left: 50%;
                     align-content: center;
@@ -284,7 +285,7 @@ body {
 
     /* ---------HAMBURGER "X" ANIMATION ---------*/
 
-    #hamburger:checked ~ label span {
+    /* #hamburger:checked ~ label span {
         background-color: transparent; 
     }
     
@@ -296,7 +297,7 @@ body {
     #hamburger:checked ~ label span:after {
         top: 0;
         transform: rotate(-45deg);
-    } 
+    }  */
 
 /*----------FOOTER----------*/
 footer {
@@ -319,6 +320,7 @@ footer {
             font-size: 16pt;
             font-family: var(--font-header);
             text-align: center;
+            color: var(--muted-gold);
         }
 
         .footer h3 {
@@ -396,7 +398,6 @@ footer {
         padding-bottom: 4rem;
     }
 
-
     .story {
         margin-top: 140px;
     }
@@ -408,11 +409,11 @@ footer {
         justify-self: start;
     }
 
-    .circle {
+    /* .circle {
         width: 195px;
         height: 195px;
         top: -150px;
-    }
+    } */
 
     .grid {
         grid-template-columns: repeat(4, 1fr);
@@ -442,12 +443,10 @@ footer {
         padding: 0;
         margin: 0;
     }
-
     
     .circle {
-        width: 210px;
-        height: 210px;
-        top: -150px;
+        width: 190px;
+        height: 190px;
     }
 
     .story {
