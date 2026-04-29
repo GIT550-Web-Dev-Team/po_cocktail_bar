@@ -182,5 +182,6 @@ p {
     #left, #right {
         grid-template-rows: 300px auto;
         align-items: center;
+        text-align: center;
     }
 }
