@@ -3,9 +3,6 @@
 ================================================== */
 
 :root {
-
-/*----------COLOR----------*/
-    /*----------COLOR----------*/
     --obsidian: #0A0711;
     --oxblood: #961E1E;
     --ember: #C85B29;
@@ -14,186 +11,150 @@
     --text-bone: #DBDFDC;
     --muted-gold: #B89A5A;
 
-/*----------FONTS----------*/
     --font-header: 'Trajan Pro', serif;
     --font-body: "Roboto", "Open Sans", sans-serif;
-
-/*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
-    Title                                       35pt
-    Headers		                Inter Bold      27pt
-	Menu Descriptions and p     Roboto regular  12pt
-	Online Menu		            Roboto regular  16pt
-*/
 }
 
 /* ==================================================
-                    MENU PAGE COMPONENTS
+                    GLOBAL
 ================================================== */
-/* ----------BODY---------- */
-header, main, footer{
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--obsidian);
+    color: var(--text-bone);
+}
+
+header, main, footer {
     background-image: url("../images/Background_Icon.png");
     background-repeat: repeat-y;
     background-size: cover;
 }
 
-
-/* ----------MAIN---------- */
-.body {
-    line-height: 1;
-}
-
 main {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-#left > *, #right > * {
-    min-width: 0;
-}
-
-.top {
-    background-color: var(--obsidian);
-    text-align: center;
-    padding: 40px;
-}
-
-img {
-    width: 316px;
-    height: 509px;
-    object-fit: cover;
-    align-items: center;
-}
-
-h2 {
-    font-size: 27pt;
-    font-family: var(--font-header);
     padding: 20px;
 }
 
-.ingredients {
-    font-size: 16pt;
-    font-family: var(--font-header);
-    color: var(--ember);
-    padding-bottom: 20px;
-}
-
-p {
-    font-size: 12pt;
-}
-
-
-#left, #right, #circle, #center {
-    padding: 30px;
-}
-
-    #left, #right {
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 509px auto;
-    }
-
-        #left .shape {
-            grid-column: 1;
-            grid-row: 1;
-            border-top-right-radius: 150px;
-            background: linear-gradient(
-            to bottom, 
-            var(--smoke-violet) 0%,
-            var(--smoke-violet) 40%, 
-            var(--smoke-violet) 50%,
-            var(--smoke-violet) 100%);
-        }
-
-        #left img {
-            grid-column: 2;
-            grid-row: 1;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        #left .card {
-            grid-column: 1 / 3;
-            background: linear-gradient(
-            to bottom, 
-            var(--smoke-violet) 0%,
-            var(--obsidian) 40%, 
-            var(--obsidian) 50%,
-            var(--obsidian) 100%);
-            padding: 30px;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
-        }
-        
-        #right .shape {
-            grid-column: 2;
-            grid-row: 1;
-            border-top-left-radius: 150px;
-            background: linear-gradient(
-            to bottom, 
-            var(--smoke-violet) 0%,
-            var(--smoke-violet) 40%, 
-            var(--smoke-violet) 50%,
-            var(--smoke-violet) 100%);
-        }
-
-    
-        #right img {
-            grid-column: 1;
-            grid-row: 1;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        #right .card {
-            grid-column: 1 / 3;
-            grid-row: 2;
-            background: linear-gradient(
-            to bottom, 
-            var(--smoke-violet) 0%,
-            var(--obsidian) 40%, 
-            var(--obsidian) 50%,
-            var(--obsidian) 100%);
-            padding: 30px;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-        }
-
-        
-
-    
 /* ==================================================
-                    MEDIA STYLES
+                    MENU SECTION
 ================================================== */
 
-/*----------(MOBILE FIRST (SMALL QUERIES) applies to the whole page)----------*/
-
-
-
-            /* ----------MEDIA QUERIES (MEDIUM)---------- */
-
-@media (max-width: 600px) {
-    #left img,
-    #right img {
-        width: 316px;
-        height: auto;
-    }
-
-    #left, #right {
-        grid-template-rows: 300px auto;
-        align-items: center;
-        text-align: center;
-    }
+.menu {
+    text-align: center;
 }
 
-@media screen and (min-width: 900px){
-    #left img,
-    #right img {
-        width: 316px;
-        height: auto;
+.menu h1 {
+    font-family: var(--font-header);
+    font-size: 35pt;
+    margin-bottom: 40px;
+}
+
+/* ---------- CAROUSEL ---------- */
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+/* Optional scrollbar styling */
+.carousel-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background: var(--ember);
+    border-radius: 10px;
+}
+
+/* ---------- CARD ---------- */
+
+.cocktail-card {
+    min-width: 280px;
+    max-width: 280px;
+    background: linear-gradient(
+        to bottom,
+        var(--smoke-violet),
+        var(--obsidian)
+    );
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.card-img-placeholder {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* ---------- TEXT ---------- */
+
+.cocktail-card h3 {
+    font-family: var(--font-header);
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+.cocktail-card em {
+    color: var(--ember);
+    font-style: normal;
+    font-size: 14pt;
+}
+
+.cocktail-card p {
+    font-size: 12pt;
+    margin: 5px 0;
+}
+
+/* ==================================================
+                    FOOTER
+================================================== */
+
+footer {
+    padding: 40px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer h2 {
+    font-family: var(--font-header);
+    font-size: 20pt;
+}
+
+.footer p, .footer a {
+    font-size: 12pt;
+    color: var(--text-bone);
+    text-decoration: none;
+}
+
+/* ==================================================
+                    MEDIA QUERIES
+================================================== */
+
+@media (max-width: 600px) {
+    .carousel-container {
+        gap: 15px;
     }
 
-    #left, #right {
-        grid-template-rows: 300px auto;
-        align-items: center;
-        text-align: center;
+    .cocktail-card {
+        min-width: 240px;
+    }
+
+    .menu h1 {
+        font-size: 28pt;
     }
 }
