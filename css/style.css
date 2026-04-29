@@ -7,13 +7,20 @@
 
 
 /* ----------BODY----------*/
-body {
+html{
     background-image: url("images/Background1_PO.png");
     background-repeat: repeat-y;
 }
 
 
-.title, #left, #right, #circle, #center {
+.title {
+    background: none;
+}
+
+
+
+
+#left, #right, #circle, #center {
     background: linear-gradient(
         to bottom, 
         var(--smoke-violet) 0%,
