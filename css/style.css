@@ -96,7 +96,7 @@ p {
         #left img {
             grid-column: 2;
             grid-row: 1;
-            width: 100%;
+            width: auto;
             height: 100%;
             object-fit: cover;
             border-radius: 50px;
@@ -118,7 +118,6 @@ p {
         #right .shape {
             grid-column: 2;
             grid-row: 1;
-
             border-top-left-radius: 150px;
             background: linear-gradient(
             to bottom, 
@@ -132,7 +131,7 @@ p {
         #right img {
             grid-column: 1;
             grid-row: 1;
-            width: 100%;
+            width: auto;
             height: 100%;
             object-fit: cover;
             border-radius: 50px;
