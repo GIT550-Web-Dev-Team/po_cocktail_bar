@@ -42,6 +42,15 @@ header, main, footer{
     line-height: 1;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#left > *, #right > * {
+    min-width: 0;
+}
+
 .top {
     background-color: var(--obsidian);
     text-align: center;
