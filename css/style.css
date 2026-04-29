@@ -29,18 +29,16 @@
 /* ==================================================
                     MENU PAGE COMPONENTS
 ================================================== */
-
-/* ----------HEADER----------*/
-
-
-
-/* ----------BODY----------*/
 header, footer{
 
     background-image: url("../images/Background_Icon.png");
     background-repeat: repeat-y;
     background-size: cover;
 }
+
+
+/* ----------BODY----------*/
+
 
 .top {
     background-color: var(--obsidian);
@@ -50,11 +48,12 @@ header, footer{
 
 h2 {
     font-size: 27pt;
-    font-family: var(--font-header);
+    font-family: var(--font-body);
 }
 
 .ingredients {
     font-size: 16pt;
+    font-family: var(--font-body);
     color: var(--ember);
 }
 
