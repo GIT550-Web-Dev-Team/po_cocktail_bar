@@ -8,6 +8,17 @@
 
 /* ----------BODY----------*/
 body {
-    background-image: url("Images/Sub_Po_Patterns_v1.jpg");
+    background-image: url("images/Background1_PO.png");
     background-repeat: repeat-y;
+}
+
+
+#left, #right, #circle, #center {
+    background: linear-gradient(
+        to bottom, 
+        var(--smoke-violet) 0%,
+        var(--obsidian) 40%, 
+        var(--obsidian) 50%,
+        var(--obsidian) 100%
+    );
 }
