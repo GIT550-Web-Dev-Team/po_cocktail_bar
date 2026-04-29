@@ -117,4 +117,5 @@ p {
         var(--obsidian) 50%,
         var(--obsidian) 100%
     );
+        padding: 30px
     }
