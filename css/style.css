@@ -14,6 +14,10 @@ header, footer{
     background-size: cover;
 }
 
+#title {
+    background-color: var(--obsidian);
+    padding: 20px 30px;
+}
 
 #left, #right, #circle, #center {
     background: linear-gradient(
