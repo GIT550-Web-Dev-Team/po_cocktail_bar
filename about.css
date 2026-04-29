@@ -72,9 +72,17 @@ table {
 	--enaena: #998675;
 	--lanumumu: #C93E3E;
 
+    --obsidian: #0A0711;
+    --oxblood: #961E1E;
+    --ember: #C85B29;
+    --smoke-violet: #3C3642;
+    --bone: #E5DDD1;
+    --text-bone: #DBDFDC;
+    --muted-gold: #B89A5A;
+
 /*----------FONTS----------*/
-    --font-header: "Trajan Pro", "Roboto", "Inter";
-    --font-body: "Roboto", "Inter", sans-serif;
+    --font-header: 'Trajan Pro', serif; 
+    --font-body: "Roboto", "Open Sans", sans-serif;
 
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
     Title                                       35pt
@@ -84,7 +92,26 @@ table {
 */
 }
 
+body {
+    font-family: var(---font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    font-family: var(--font-header);
+    text-decoration: none;
+    font-weight: 700;
+}
 
 
 
@@ -158,6 +185,12 @@ body {
                 align-items: center;
                 justify-content: flex-start;
             }
+
+            /* .logo-and-title img {
+                width: 120px;
+                height: 70px;
+                padding-bottom: 65px;
+            } */
 
                 .logo-and-title h1 {
                     font-weight: bolder;
@@ -366,6 +399,11 @@ footer {
     color: white;
 }
 
+/* .footer {
+    color: white;
+    padding: 30px;
+} */
+
     .footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -373,12 +411,20 @@ footer {
         max-width: 100%;
         margin: 20px auto;
         padding: auto;
+        color: white;
+        padding: 30px;
     }
 
-        .footer h2 {
+        /* .footer h2 {
             text-align: center;
             font-size: 16pt;
             font-family: var(--font-header);
+        } */
+
+        .footer h2 {
+            font-size: 16pt;
+            font-family: var(--font-header);
+            text-align: center;
         }
 
         .footer h3 {
@@ -386,6 +432,11 @@ footer {
             font-family: var(--font-header);
             color: var(--enaena);
         }
+
+        /* .footer p {
+            font-size: 12pt;
+            font-family: var(--font-body);
+        } */
 
         .footer p {
             font-size: 12pt;
@@ -467,6 +518,12 @@ footer {
         padding-left: 0;
     }   
 
+    /* .logo-and-title img {
+        width: 120px;
+        height: 70px;
+        padding-bottom: 65px;
+    } */
+
     .navigation {
         max-width: 1200px;
         margin: 0 auto;
@@ -541,6 +598,7 @@ footer {
     .grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+        margin-bottom: 20px;
     }
 
     .box.tall {
@@ -558,7 +616,6 @@ footer {
     }
 }
 
-
 /* Desktops (large) */
 @media screen and (min-width: 900px){
     .page {
@@ -566,6 +623,12 @@ footer {
         padding: 0;
         margin: 0;
     }
+
+    /* .logo-and-title img {
+        width: 120px;
+        height: 70px;
+        padding-bottom: 65px;
+    } */
 
     #hamburger, .navigation label {
         display: none;
@@ -633,6 +696,7 @@ footer {
         grid-template-columns: repeat(6, 1fr);
         grid-auto-flow: row dense;
         gap: 12px;
+        margin-bottom: 20px;
     }
 
     .box.tall {
