@@ -175,7 +175,7 @@ p {
 @media (max-width: 600px) {
     #left img,
     #right img {
-        width: 100%;
+        width: 316px;
         height: auto;
     }
 
