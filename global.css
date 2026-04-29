@@ -209,7 +209,7 @@ body {
         }
 
         .navigation li:hover, .navigation a:hover {
-            color: var(--obsidian);
+            color: var(--bone);
             background-color: var(--ember);
         }
 
@@ -447,7 +447,7 @@ footer {
 
     .navigation a:hover {
         background-color: var(--ember);
-        color: var(--obsidian);
+        color: var(--bone);
     }
 
     #hamburger {
@@ -518,7 +518,7 @@ footer {
 
     .navigation a:hover {
         background-color: var(--ember);
-        color: var(--obsidian);
+        color: var(--bone);
     }
 
     #hamburger {

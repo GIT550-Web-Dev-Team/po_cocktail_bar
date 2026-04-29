@@ -204,7 +204,7 @@ body {
     padding: 80px 20px 60px;
     position: relative;
     font-weight: 700;
-    margin-top: 145px; /* increase this */
+    margin-top: 145px;
 }
 
 .story h2 {
@@ -243,7 +243,7 @@ body {
 }
 
 .box {
-    background: var(--bone);
+    background: var(--text-bone);
     height: 130px;
 }
 
@@ -437,7 +437,7 @@ footer {
     }
 
     .story p {
-        font-size: 14px;
+        font-size: 16px;
         font-family: var(--font-body);
         justify-self: start;
 }
