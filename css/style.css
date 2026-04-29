@@ -87,8 +87,7 @@ p {
 
     #left, #right {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px auto;
+        grid-template-columns: 2fr 1fr;
     }
 
         #left .shape {
