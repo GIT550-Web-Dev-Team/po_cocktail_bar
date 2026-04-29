@@ -8,10 +8,8 @@
 
 /* ----------BODY----------*/
 header{
-    display: block;
-    padding: 0;
-    margin: 0;
-    background-image: url("images/Background1_PO.png");
+
+    background-image: url("../images/Background1_PO.png");
     background-repeat: repeat-y;
     background-size: cover;
 }
