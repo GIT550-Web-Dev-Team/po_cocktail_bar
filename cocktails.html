@@ -1,126 +1,101 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Lab 5.6: Revision Round 2</title>
-        <meta name="author" content="Devon Walters">
-        <meta name="description" content="Welcome to the lounge PO! where it provides a immersive and story-driven experience.">
-<!-- icon -->
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<!-- font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pō Cocktail Lounge | Cocktails</title>
 
-        <link rel="stylesheet" href="https://use.typekit.net/sju4mhj.css">
+    <meta name="description" content="Handcrafted cocktails inspired by island traditions.">
 
-        <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
 
-        <link rel="stylesheet" href="css/style.css">
+<body>
 
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    </head>
+<header>
+    <div class="container title">
+        <div class="logo-and-title">
+            <img src="images/Po-Horizontal.png" alt="Po Logo">
+        </div>
 
-    <body>
-        <header>
-            <div class="container title">
-                <div class="logo-and-title">
-                    <img src="images/Po-Horizontal.png" alt="Po Logo">
-                </div>
-                <nav class="navigation">
-                        <input type="checkbox" id="hamburger">
-                        <label for="hamburger"><span></span></label>
-                            <ul class="dropdown-nav">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">Our Story</a></li>
-                                <li><a href="cocktails.html">Cocktails</a></li>
-                                <li><a href="events.html">Event Calendar</a></li>
-                                <li><a href="reservation.html">Reservation</a></li>
-                            </ul>
-                </nav>
-            </div>
-        </header>
+        <nav class="navigation">
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger"><span></span></label>
 
+            <ul class="dropdown-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="cocktails.html">Cocktails</a></li>
+                <li><a href="events.html">Event Calendar</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <main>
+<main>
 
-            <div class="top">
-                <h1>Cocktails</h1>
-            </div>
-            <!-- CARD 1 -->
-            <section id="left">
-                <div class="shape"></div>
-                <img src="images/cocktail-one.jpg" alt="cocktail drink on the table">
+<section class="menu">
+    <h1>Our Cocktails</h1>
 
-                <div class="card">
-                    <h2>Pele, 14</h2>
-                    <p class="ingredients">Cherry smoked, fruity rum with passion fruit & pineapple</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
-                </div>
-            </section>
-            <!-- CARD 2 -->
+    <div class="carousel-container">
 
-            <section id="right">
-                <div class="shape"></div>
-                <img src="images/cocktail-two.jpg" alt="cocktail drink sitting on the table">
+        <div class="cocktail-card">
+            <div class="card-img-placeholder" style="background-image:url('images/Volcanic Ember.jpeg'); background-size:cover; background-position:center;"></div>
+            <h3>Volcanic Ember</h3>
+            <p><em>Spiced rum, citrus, hint of chili</em></p>
+            <p>A warm and bold drink with a slight kick at the end.</p>
+        </div>
 
-                <div class="card">    
-                    <h2>Maui, 12</h2>
-                    <p class="ingredients">Premium rums, fresh lime, orange curacao & orgeat</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
-                </div>
-            </section>
+        <div class="cocktail-card">
+            <div class="card-img-placeholder" style="background-image:url('images/Island Mist.jpeg'); background-size:cover; background-position:center;"></div>
+            <h3>Island Mist</h3>
+            <p><em>Coconut, lime, white rum</em></p>
+            <p>Light and refreshing, perfect for a relaxed evening.</p>
+        </div>
 
-            <!-- CARD 3 -->
+        <div class="cocktail-card">
+            <div class="card-img-placeholder" style="background-image:url('images/Golden Ritual.jpeg'); background-size:cover; background-position:center;"></div>
+            <h3>Golden Ritual</h3>
+            <p><em>Whiskey, honey, bitters</em></p>
+            <p>Smooth and slightly sweet with a rich finish.</p>
+        </div>
 
-            <section id="circle">
-                <div class="shape beige"></div>
-                <img src="images/cocktail-three.jpg" alt="cocktail drink sitting on the table">
-                    
-                <div class="card">
-                    <h2>Tumatauenga, 10</h2>
-                    <p class="ingredients">100 proof premium bourbon & banana</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
-                </div>
-            </section>
+        <div class="cocktail-card">
+            <div class="card-img-placeholder" style="background-image:url('images/Mid night Tiki.jpeg'); background-size:cover; background-position:center;"></div>
+            <h3>Midnight Tiki</h3>
+            <p><em>Dark rum, pineapple, spice</em></p>
+            <p>A deeper flavor with a tropical twist.</p>
+        </div>
 
-            <!-- CARD 4 -->
-             
-            <section id="center">
-                <div class="shape circle"></div>
-                <img src="Images/cocktail-four.jpg" alt="cocktail drink on the table">
-                
-                <div class="card">    
-                    <h2>Whiro, 10</h2>
-                    <p class="ingredients">Postmodern whiskey, pineapple, guava, bitters & club soda</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam sed urna aliquam aliquet sit amet eget enim. Cras laoreet urna quis sem efficitur, in varius ipsum scelerisque. Duis dictum lacus sed sapien efficitur tincidunt. Phasellus vehicula id lacus at laoreet. Mauris semper elit non sapien aliquet vestibulum. Vivamus rhoncus nunc nec mauris posuere, convallis posuere ante consequat. Proin hendrerit malesuada ante id pharetra. Maecenas convallis diam urna, vel elementum erat scelerisque quis.</p>
-                </div>
-            </section>
+    </div>
+</section>
 
-        </main>
-<!-- FOOTER -->
-        <footer>
-            <div class="container footer">
-                <section class="footer-address">
-                    <h2>Tiki Vicks</h2>
-                        <h3>Address</h3>
-                        <p><a href="">543 Tiki Vicks Lounge, Cocktail Road, HI 20026</a></p>
-                        <br>
-                        <h3>Hours of Operation</h3>
-                        <p>OPEN EVERYDAY | 11am-12am</p>
-                </section>
-                <section class="footer-social">
-                    <h2>Follow Us</h2>
-                    <p><a href="">Instagram</a></p>
-                    <p><a href="">Facebook</a></p>
-                    <br>
-                    <h2>Contact</h2>
-                    <p><a href="">(450) 550-2026</a></p>
-                </section>
-            </div>
-        </footer>
+</main>
 
-    </body>
+<footer>
+    <div class="container footer">
+        <section class="footer-address">
+            <h2>Tiki Vicks</h2>
+            <h3>Address</h3>
+            <p><a href="">543 Tiki Vicks Lounge, Cocktail Road, HI 20026</a></p>
+            <br>
+            <h3>Hours of Operation</h3>
+            <p>OPEN EVERYDAY | 11AM-12AM</p>
+        </section>
 
+        <section class="footer-social">
+            <h2>Follow Us</h2>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Facebook</a></p>
+            <br>
+            <h2>Contact</h2>
+            <p><a href="">(123) 456-7890</a></p>
+        </section>
+    </div>
+</footer>
+
+</body>
 </html>
+
