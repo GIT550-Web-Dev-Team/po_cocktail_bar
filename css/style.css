@@ -15,7 +15,7 @@ header{
 }
 
 
-#left, #right, #circle, #center {
+section {
     background: linear-gradient(
         to bottom, 
         var(--smoke-violet) 0%,
