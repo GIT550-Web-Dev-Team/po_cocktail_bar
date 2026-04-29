@@ -249,6 +249,7 @@ body {
     align-content: center;
 }
 
+/* remove background when I add images to the grid */
 .box {
     background: var(--text-bone);
     height: 130px;
@@ -262,6 +263,26 @@ body {
     grid-column: span 1;
     height: 175px;
 }
+
+.box.tall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* uncomment when I add images to the grid /*
+
+/* .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* .box.wide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
     /* ---------HAMBURGER "X" ANIMATION ---------*/
 
