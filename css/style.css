@@ -85,7 +85,6 @@ p {
     #left .shape {
         grid-column: 1;
         grid-row: 1;
-
         border-top-right-radius: 150px;
         background: linear-gradient(
         to bottom, 
@@ -117,5 +116,7 @@ p {
         var(--obsidian) 50%,
         var(--obsidian) 100%
     );
-        padding: 30px
+        padding: 30px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
