@@ -58,8 +58,9 @@ main {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    width: 316px;
+    height: 509px;
+    object-fit: cover;
     display: block;
 }
 
@@ -86,9 +87,8 @@ p {
 }
 
     #left, #right {
-        display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 300px auto;
+        grid-template-rows: 509px auto;
     }
 
         #left .shape {
@@ -173,12 +173,13 @@ p {
             /* ----------MEDIA QUERIES (MEDIUM)---------- */
 
 @media (max-width: 600px) {
-    #left, #right {
-        grid-template-columns: 2fr 1fr; /* keep 2 columns */
-        grid-template-rows: 200px auto;
+    #left img,
+    #right img {
+        width: 100%;
+        height: auto;
     }
 
     #left, #right {
-        padding: 15px;
+        grid-template-rows: 300px auto;
     }
 }
