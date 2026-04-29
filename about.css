@@ -197,6 +197,13 @@ body {
                     align-content: center;
                 }
 
+                .circle img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+
     /* Story Section */
 .story {
     background: linear-gradient(var(--smoke-violet) 10%, var(--obsidian) 85%);
