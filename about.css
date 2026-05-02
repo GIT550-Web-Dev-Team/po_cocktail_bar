@@ -36,43 +36,43 @@
     main {
         background: linear-gradient(
             to bottom, 
-            var(--oxblood) 0%,
-            var(--obsidian) 40%, 
-            var(--obsidian) 50%,
-            var(--obsidian) 100% );
+            var(--oxblood) 45%,
+            var(--obsidian) 40%,
+            var(--obsidian) 0%);
     }
     
         /* Story Section */
     .story {
         text-align: center;
-        padding: 80px 20px 60px;
+        padding: 120px 20px 60px;
         position: relative;
-        font-weight: 700;
+        font-weight: 400;
         margin-top: 160px;
     }
     
     .circle {
-        width: 180px;
-        height: 180px;
-        background: #ccc;
-        border-radius: 55%;
+        width: 210px;
+        height: 190px;
+        background: var(--oxblood);
+        border-radius: 60%;
         border: 14px solid var(--oxblood);
         position: absolute;
-        top: -140px;
+        top: -155px;
         transform: translate(-50%);
         left: 50%;
         align-content: center;
     }
 
     .circle img {
-        width: 180px;
-        height: 180px;
+        width: 220px;
+        height: 250px;
     }
     
     .story h2 {
         margin-bottom: 25px;
         font-family: var(--font-header);
         font-size: 27px;
+        font-weight: 200;
     }
     
     .story p {
@@ -89,18 +89,13 @@
         padding: 30px 20px;
     }
     
-    .gallery h2 {
-        font-family: var(--font-header);
-        font-size: 27px;
-        margin-bottom: 30px;
-    }
-    
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         margin-left: 20px;
         align-content: center;
+        margin-top: 10px;
     }
     
     .box {
