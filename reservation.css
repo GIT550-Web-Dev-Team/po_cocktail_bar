@@ -372,14 +372,17 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Adjust booking form */
+
     .booking-form {
-        width: 900px;
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
     }
 
-    /* Fields 1-3 (top row) */
+    /* Ensure #requests textarea spans all 3 columns */
+    #requests {
+        grid-column: 1 / 4;
+    }
+
+    /* Row 1: date, guests, location */
     #date {
         grid-column: 1 / 2;
     }
@@ -392,7 +395,7 @@ footer {
         grid-column: 3 / 4;
     }
 
-    /* Fields 4-6 (second row) */
+    /* Row 2: name, email, phone */
     #name {
         grid-column: 1 / 2;
     }
@@ -405,19 +408,12 @@ footer {
         grid-column: 3 / 4;
     }
 
+    /* Row 3: requests text area */
     #requests {
-        grid-column: 1 / 4;
+        grid-column: 1 / 4; /* Span the whole row */
     }
 
-    .booking-form {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    #requests {
-        grid-column: 1 / 4;
-    }
-
+    /* Button row */
     .booking-form button {
         grid-column: 1 / 4;
         justify-self: center;
