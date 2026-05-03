@@ -170,48 +170,43 @@ header {
 .booking-form {
     max-width: 900px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .field {
+    flex: 1 1 180px;
+    min-width: 180px;
     position: relative;
+}
+
+.request-field {
+    flex: 1 1 100%;
 }
 
 .field input,
 .field select {
     width: 100%;
-    padding: 16px 10px;
+    box-sizing: border-box;
     background-color: var(--oxblood);
     color: var(--bone);
     border: 1px solid var(--muted-gold);
-    border-radius: 3px;
+    padding: 14px 10px;
     font-size: 11pt;
+    border-radius: 3px;
     outline: none;
 }
 
-/* label starts inside field */
 .field label {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: block;
+    font-size: 11pt;
     color: var(--bone);
-    pointer-events: none;
-    transition: 0.2s ease;
+    margin-bottom: 6px;
+    text-align: left;
     font-family: var(--font-body);
-}
-
-/* float label when active */
-.field input:focus + label,
-.field input:not(:placeholder-shown) + label,
-.field select:focus + label,
-.field select:valid + label {
-    top: -8px;
-    font-size: 9pt;
-    background: var(--oxblood);
-    padding: 0 5px;
 }
 
 .booking-form button {
