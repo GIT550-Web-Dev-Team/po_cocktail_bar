@@ -84,6 +84,8 @@ main {
 	border-radius: 20px;
 	padding: 20px;
 	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .card-img-placeholder {
@@ -124,6 +126,8 @@ main {
 	padding: 30px;
 	height: 180px;
 	width: 200px;
+	border-radius: 10px;
+	grid-row: 2;
 }
 
 
