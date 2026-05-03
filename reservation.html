@@ -14,6 +14,9 @@
     <meta name="author" content="Angela Roque Rupak, Acharya">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
@@ -73,16 +76,7 @@
 
             <div class="field">
                 <img class="icon" src="images/experience_transparent.png" alt="">
-                
-                <input 
-                    type="text" 
-                    id="date" 
-                    name="date" 
-                    required 
-                    placeholder="Date & Time" 
-                    onfocus="(this.type='datetime-local')" 
-                    onblur="if(!this.value) this.type='text'"
-                >
+                <input type="text" id="date" name="date" required placeholder="Date & Time">
             </div>
 
             <div class="field">
@@ -237,6 +231,15 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
         console.error("Error:", error);
         alert("Something went wrong.");
     });
+});
+
+// Activates the Flatpickr calendar on our date input
+flatpickr("#date", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    altInput: true,
+    altFormat: "F j, Y at h:i K", 
+    minDate: "today" 
 });
 </script>
 
