@@ -1,4 +1,4 @@
-  <!--HTML BY TEAM 4: WEB-DEV TEAM - ANGELA ROQUE, UPDATED BY RUPAK ACHARYA-->
+  <!--HTML BY TEAM 4: WEB-DEV TEAM - ANGELA ROQUE-->
 <!--GIT 450-550: CREATIVE TEAM AND PROCESS WORKFLOW-->
 
 <!DOCTYPE html>
@@ -41,12 +41,9 @@
 
 <main>
 
-    <section class="reservation-hero">
-        <div class="reservation-hero-content">
-            <h1>Reservations</h1>
+    <section class="reservation">
+            <h1>RESERVATIONS</h1>
             <p>Reserve your table and step into the hidden world of Pō.</p>
-            <a href="#reservation-booking" class="hero-button">Book a Table</a>
-        </div>
     </section>
 
     <section class="address">
@@ -55,11 +52,17 @@
                 <img src="images/Po-icon-seal.png" alt="Pō icon seal">
             </div>
 
-            <div class="address-content">
-                <h2>Pō</h2>
-                <p>543 Tiki Vicks Lounge, Cocktail Road, HI 20026</p>
+            <div class="address-box">
+                <div class="address-content">
+                    <h2>Pō</h2>
+                    <p>543 Tiki Vicks Lounge, Cocktail Road, HI 20026</p>
+                </div>
+            </div>
+
+            <div class="address-button">
                 <a href="">Contact Us</a>
             </div>
+
         </div>
     </section>
 
@@ -67,43 +70,50 @@
         <h2>Book a Table</h2>
 
         <form class="booking-form" id="booking-form">
+
             <div class="field">
-                <input type="datetime-local" id="date" name="date" required>
-                <label for="date">Date</label>
+                <img class="icon" src="images/experience_icon.jpg" alt="">
+                <input type="datetime-local" id="date" name="date" required placeholder="Date">
             </div>
 
             <div class="field">
+                <img class="icon" src="images/craft_icon.jpg" alt="">
                 <select id="guests" name="guests" required>
-                    <option value=""></option>
+                    <option value="" disabled selected>Guests</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4+</option>
                 </select>
-                <label for="guests">Guests</label>
             </div>
 
             <div class="field">
+                <img class="icon" src="images/heritage_icon.jpg" alt="">
                 <select id="location" name="location" required>
-                    <option value=""></option>
+                    <option value="" disabled selected>Location</option>
                     <option value="indoor">Indoor</option>
                     <option value="outdoor">Outdoor</option>
                     <option value="bar">Bar</option>
                     <option value="no-preference">No Preference</option>
                 </select>
-                <label for="location">Location</label>
             </div>
 
             <div class="field">
-                <input type="text" id="name" name="name" required>
-                <label for="name">Name</label>
+                <img class="icon" src="images/experience_icon.jpg" alt="">
+                <input type="text" id="name" name="name" required placeholder="Name">
             </div>
 
-            <div class="field request-field">
-                <input type="text" id="requests" name="requests">
-                <label for="requests">Requests</label>
+            <div class="field">
+                <img class="icon" src="images/craft_icon.jpg" alt="">
+                <input type="email" id="email" name="email" required placeholder="Email">
             </div>
 
+            <div class="field">
+                <img class="icon" src="images/heritage_icon.jpg" alt="">
+                <input type="tel" id="phone" name="phone" required placeholder="Phone">
+            </div>
+
+            
             <button type="submit">Book</button>
         </form>
     </section>
@@ -168,6 +178,27 @@
 </footer>
 
 <script>
+// Phone auto-format
+document.getElementById("phone").addEventListener("input", function() {
+    let value = this.value.replace(/\D/g, ""); // remove non-digits
+
+    if (value.length > 10) value = value.slice(0, 10);
+
+    let formatted = value;
+
+    if (value.length > 6) {
+        formatted = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6)}`;
+    } else if (value.length > 3) {
+        formatted = `(${value.slice(0,3)}) ${value.slice(3)}`;
+    } else if (value.length > 0) {
+        formatted = `(${value}`;
+    }
+
+    this.value = formatted;
+});
+
+
+// Form submit
 document.getElementById("booking-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -176,7 +207,8 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
         guests: document.getElementById("guests").value,
         location: document.getElementById("location").value,
         name: document.getElementById("name").value,
-        requests: document.getElementById("requests").value
+        email: document.getElementById("email").value,   // ✅ added
+        phone: document.getElementById("phone").value   // ✅ added
     };
 
     fetch("https://sheetdb.io/api/v1/ii8j57j7zfsog", {
