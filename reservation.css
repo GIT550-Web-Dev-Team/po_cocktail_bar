@@ -261,7 +261,7 @@ header {
     font-weight: bolder;
 }
 
-.field .area {
+.field.area {
     grid-column: 1 / 4;
 }
 
