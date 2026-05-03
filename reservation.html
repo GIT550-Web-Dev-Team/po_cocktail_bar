@@ -71,54 +71,31 @@
 
         <form class="booking-form" id="booking-form">
 
-            <div class="field">
-                <input type="datetime-local" id="date" name="date" required>
-                <label for="date">Date</label>
-            </div>
+            <input type="datetime-local" id="date" name="date" required placeholder="Date">
 
-            <div class="field">
-                <select id="guests" name="guests" required>
-                    <option value="" disabled selected></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4+</option>
-                </select>
-                <label for="guests">Guests</label>
-            </div>
+            <select id="guests" name="guests" required>
+                <option value="" disabled selected>Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4+</option>
+            </select>
 
-            <div class="field">
-                <select id="location" name="location" required>
-                    <option value="" disabled selected></option>
-                    <option value="indoor">Indoor</option>
-                    <option value="outdoor">Outdoor</option>
-                    <option value="bar">Bar</option>
-                    <option value="no-preference">No Preference</option>
-                </select>
-                <label for="location">Location</label>
-            </div>
+            <select id="location" name="location" required>
+                <option value="" disabled selected>Location</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="bar">Bar</option>
+                <option value="no-preference">No Preference</option>
+            </select>
 
-            <div class="field">
-                <input type="text" id="name" name="name" required>
-                <label for="name">Name</label>
-            </div>
+            <input type="text" id="name" name="name" required placeholder="Name">
 
-            <div class="field">
-                <input type="email" id="email" name="email" required>
-                <label for="email">Email</label>
-            </div>
+            <input type="email" id="email" name="email" required placeholder="Email">
 
-            <div class="field">
-                <input type="tel" id="phone" name="phone"
-                    maxlength="14"
-                    required>
-                <label for="phone">Phone</label>
-            </div>
+            <input type="tel" id="phone" name="phone" required placeholder="Phone">
 
-            <div class="field request-field">
-                <input type="text" id="requests" name="requests">
-                <label for="requests">Requests</label>
-            </div>
+            <input type="text" id="requests" name="requests" placeholder="Requests">
 
             <button type="submit">Book</button>
         </form>
