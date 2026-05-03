@@ -168,7 +168,7 @@ header {
 }
 
 .booking-form {
-    max-width: 900px;
+    width: 300px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -201,7 +201,7 @@ header {
 .booking-form input:focus,
 .booking-form select:focus {
     border-color: var(--muted-gold);
-    box-shadow: 6px var(--obsidian);
+    box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
 }
 
 /* submit button */
@@ -328,6 +328,7 @@ footer {
     }
 
     .booking-form {
+        max-width: 900px;
         grid-template-columns: repeat(3, 1fr);
     }
 
