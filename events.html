@@ -215,6 +215,29 @@
             }
         });
     });
+
+    // --- AUTOLOAD EVENT FROM URL ---
+ 
+    const urlParams = new URLSearchParams(window.location.search);
+    const targetDate = urlParams.get('date');
+    if (targetDate) {
+        
+        dateCells.forEach(cell => {
+
+            const cellNumber = parseInt(cell.textContent);
+            
+            if (cellNumber === parseInt(targetDate)) {
+                
+                cell.click(); 
+                
+                
+                document.querySelector('.event-detail-card').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            }
+        });
+    }
 </script>
 
 </body>
