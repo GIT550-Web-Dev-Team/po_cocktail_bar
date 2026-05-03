@@ -73,7 +73,16 @@
 
             <div class="field">
                 <img class="icon" src="images/experience_transparent.png" alt="">
-                <input type="datetime-local" id="date" name="date" required placeholder="Date">
+                
+                <input 
+                    type="text" 
+                    id="date" 
+                    name="date" 
+                    required 
+                    placeholder="Date & Time" 
+                    onfocus="(this.type='datetime-local')" 
+                    onblur="if(!this.value) this.type='text'"
+                >
             </div>
 
             <div class="field">
