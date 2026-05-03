@@ -222,6 +222,19 @@ header {
     color: var(--bone);
 }
 
+.booking-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--oxblood);
+    color: var(--bone);
+    border: 1px solid var(--muted-gold);
+    padding: 14px 10px 14px 38px; /* keeps icon space */
+    font-size: 11pt;
+    border-radius: 3px;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+}
 
 .field {
     position: relative;
