@@ -87,6 +87,19 @@
             </div>
 
             <div class="field">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="field">
+                <input type="tel" id="phone" name="phone"
+                    placeholder="(123) 456-7890"
+                    maxlength="14"
+                    required>
+                <label for="phone">Phone</label>
+            </div>
+
+            <div class="field">
                 <select id="location" name="location" required>
                     <option value=""></option>
                     <option value="indoor">Indoor</option>
@@ -171,6 +184,27 @@
 </footer>
 
 <script>
+// Phone auto-format
+document.getElementById("phone").addEventListener("input", function() {
+    let value = this.value.replace(/\D/g, ""); // remove non-digits
+
+    if (value.length > 10) value = value.slice(0, 10);
+
+    let formatted = value;
+
+    if (value.length > 6) {
+        formatted = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6)}`;
+    } else if (value.length > 3) {
+        formatted = `(${value.slice(0,3)}) ${value.slice(3)}`;
+    } else if (value.length > 0) {
+        formatted = `(${value}`;
+    }
+
+    this.value = formatted;
+});
+
+
+// Form submit
 document.getElementById("booking-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -179,6 +213,8 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
         guests: document.getElementById("guests").value,
         location: document.getElementById("location").value,
         name: document.getElementById("name").value,
+        email: document.getElementById("email").value,   // ✅ added
+        phone: document.getElementById("phone").value,   // ✅ added
         requests: document.getElementById("requests").value
     };
 
