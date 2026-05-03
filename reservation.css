@@ -261,11 +261,6 @@ header {
     font-weight: bolder;
 }
 
-.field.area {
-    grid-column: 1 / 4;
-}
-
-
 
 /* ----------SEATING OPTIONS---------- */
 
@@ -295,7 +290,7 @@ header {
 }
 
 .seating-card {
-    background-color: rgba(60, 54, 66, 0.9);
+    background-color: var(--obsidian);
     border: 1px solid var(--oxblood);
     border-radius: 10px;
     overflow: hidden;
