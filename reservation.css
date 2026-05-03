@@ -222,6 +222,30 @@ header {
     color: var(--bone);
 }
 
+
+.field {
+    position: relative;
+}
+
+/* icon image */
+.field .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+/* space for icon inside input */
+.field input,
+.field select {
+    padding-left: 38px;
+}
+
 /* ----------SEATING OPTIONS---------- */
 
 .seating-options {
