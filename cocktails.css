@@ -127,6 +127,7 @@ main {
 	height: 180px;
 	width: 200px;
 	border-radius: 10px;
+	grid-column: 1/2;
 	grid-row: 2;
 }
 
