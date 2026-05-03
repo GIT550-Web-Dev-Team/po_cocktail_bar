@@ -113,10 +113,6 @@
                 <input type="tel" id="phone" name="phone" required placeholder="Phone">
             </div>
 
-            <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
-                <textarea id="requests" name="requests" placeholder="Requests"></textarea>
-            </div>
             
             <button type="submit">Book</button>
         </form>
@@ -212,8 +208,7 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
         location: document.getElementById("location").value,
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,   // ✅ added
-        phone: document.getElementById("phone").value,   // ✅ added
-        requests: document.getElementById("requests").value
+        phone: document.getElementById("phone").value   // ✅ added
     };
 
     fetch("https://sheetdb.io/api/v1/ii8j57j7zfsog", {
