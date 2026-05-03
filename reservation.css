@@ -198,8 +198,10 @@ header {
 /* hover + focus */
 .booking-form input:hover,
 .booking-form select:hover,
+.booking-form textarea:hover
 .booking-form input:focus,
-.booking-form select:focus {
+.booking-form select:focus, 
+.booking-form textarea:focus {
     border-color: var(--muted-gold);
     box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
 }
