@@ -83,7 +83,7 @@ main {
 	background: linear-gradient(to bottom, var(--oxblood), var(--obsidian));
 	border-radius: 20px;
 	padding: 20px;
-	text-align: left;
+	text-align: center;
 }
 
 .card-img-placeholder {
