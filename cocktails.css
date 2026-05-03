@@ -87,10 +87,16 @@ main {
 }
 
 .card-img-placeholder {
-	width: 100%;
-	height: 300px;
-	border-radius: 15px;
-	margin-bottom: 15px;
+	width: 215px;
+    height: 210px;
+    background: var(--oxblood);
+    border-radius: 50%;
+    border: 12px solid var(--oxblood);
+    position: absolute;
+    top: -175px;
+    transform: translate(-50%);
+    left: 50%;
+    align-content: center;
 }
 
 /* ---------- TEXT ---------- */
