@@ -201,7 +201,7 @@ header {
 .booking-form input:focus,
 .booking-form select:focus {
     border-color: var(--muted-gold);
-    box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
+    box-shadow: 6px var(--obsidian);
 }
 
 /* submit button */
