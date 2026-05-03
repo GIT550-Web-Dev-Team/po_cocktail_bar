@@ -265,6 +265,26 @@ header {
     grid-column: 1 / 4;
 }
 
+.booking-form {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    .field {
+        display: block;
+        width: 100%;
+    }
+
+    /* Make sure the textarea spans the full width */
+    #requests {
+        width: 100%;
+        grid-column: 1 / 2; /* span 1 column */
+    }
+
+    /* Form button */
+    .booking-form button {
+        grid-column: 1 / 2;
+    }
+
 /* ----------SEATING OPTIONS---------- */
 
 .seating-options {
