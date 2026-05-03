@@ -228,7 +228,7 @@ header {
     background-color: var(--oxblood);
     color: var(--bone);
     border: 1px solid var(--muted-gold);
-    padding: 14px 10px 14px 38px; /* keeps icon space */
+    padding: 14px 10px 55px 38px; /* keeps icon space */
     font-size: 11pt;
     border-radius: 3px;
     outline: none;
