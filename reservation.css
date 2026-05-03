@@ -1,21 +1,15 @@
-  /* ==================================================
+/* ==================================================
                     RESERVATION PAGE COMPONENTS
 ================================================== */
 
-html {
-    background-color: var(--obsidian);
-}
-
-body {
+html, body {
     background-color: var(--obsidian);
     color: var(--bone);
 }
 
-/* ----------HEADER---------- */
 header {
     border-bottom: none;
 }
-
 
 /* ----------RESERVATION---------- */
 
@@ -23,11 +17,8 @@ header {
     background-color: var(--smoke-violet);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 40px 20px;
+    text-align: center;
 }
 
 .reservation h1 {
@@ -35,7 +26,6 @@ header {
     font-size: 35pt;
     color: var(--bone);
     margin-bottom: 0.5rem;
-    font-weight: 400;
 }
 
 .reservation p {
@@ -44,14 +34,11 @@ header {
     color: var(--text-bone);
 }
 
-
 /* ----------ADDRESS---------- */
 
 .address {
-    padding: 50px 0px;
-    background:
-        linear-gradient(#0A0711F5, #0A0711F5),
-        url("images/Asset 1.png");
+    padding: 50px 0;
+    background: linear-gradient(#0A0711F5, #0A0711F5), url("images/Asset 1.png");
     background-repeat: repeat;
     background-size: 600px;
 }
@@ -64,58 +51,32 @@ header {
     text-align: center;
 }
 
-.address-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    grid-row: 1;
-    grid-column: 1;
-    justify-self: flex-end;
-    align-self: center;
-    z-index: 2
-}
-
-.address-image img {
+.address-image, .address-image img {
     width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
     border: 30px solid var(--oxblood);
-    grid-row: 1;
-    grid-column: 1;
-    justify-self: start;
-    align-self: center;
-    z-index: 2
 }
 
 .address-box {
     background-color: var(--oxblood);
     margin: 0;
     border-radius: 8px;
-    grid-row: 1;
     grid-column: 1 / 6;
-    position: relative;
-    z-index: 1;
 }
 
 .address-content {
     text-align: center;
     width: 200px;
     justify-self: end;
-    padding: 10px 0px;
-    z-index: 2;
+    padding: 10px 0;
 }
 
 .address-content h2 {
     font-family: var(--font-header);
     font-size: 27pt;
     color: var(--bone);
-}
-
-.address-content p {
-    font-family: var(--font-body);
-    font-size: 12pt;
 }
 
 .address-button {
@@ -126,20 +87,8 @@ header {
     font-size: 14pt;
     font-weight: 700;
     border-radius: 5px;
-    grid-row: 2;
-    grid-column: 3 / 6;
-    position: relative;
     justify-self: center;
     z-index: 1;
-}
-
-.address-button {
-    color: var(--text-bone);
-    text-decoration: none;
-}
-
-.address-button a {
-    color: var(--text-bone);
     text-decoration: none;
 }
 
@@ -152,9 +101,7 @@ header {
 
 .booking {
     padding: 50px 20px;
-    background:
-        linear-gradient(#0A0711F5, #0A0711F5),
-        url("images/Asset 1.png");
+    background: linear-gradient(#0A0711F5, #0A0711F5), url("images/Asset 1.png");
     background-repeat: repeat;
     background-size: 600px;
     text-align: center;
@@ -168,18 +115,15 @@ header {
 }
 
 .booking-form {
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
 }
 
-/* shared input + select styling */
-.booking-form input,
-.booking-form select {
+.booking-form input, .booking-form select, .booking-form textarea {
     width: 100%;
-    box-sizing: border-box;
     background-color: var(--oxblood);
     color: var(--bone);
     border: 1px solid var(--ember);
@@ -189,22 +133,15 @@ header {
     outline: none;
 }
 
-/* placeholder styling */
-.booking-form input::placeholder,
-.booking-form select {
+.booking-form input::placeholder, .booking-form select::placeholder {
     color: rgba(245, 240, 230, 0.7);
 }
 
-/* hover + focus */
-.booking-form input:hover,
-.booking-form select:hover,
-.booking-form input:focus,
-.booking-form select:focus {
+.booking-form input:hover, .booking-form select:hover, .booking-form input:focus, .booking-form select:focus {
     border-color: var(--muted-gold);
     box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
 }
 
-/* submit button */
 .booking-form button {
     width: 100%;
     padding: 12px 20px;
@@ -213,7 +150,6 @@ header {
     color: var(--text-bone);
     font-size: 14pt;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: 700;
 }
 
@@ -222,26 +158,10 @@ header {
     color: var(--bone);
 }
 
-.booking-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--oxblood);
-    color: var(--text-bone);
-    border: 1px solid var(--ember);
-    padding: 14px 10px 15px 55px;
-    font-size: 11pt;
-    border-radius: 3px;
-    outline: none;
-    resize: vertical;
-    min-height: 80px;
-    font-weight: normal;
-}
-
 .field {
     position: relative;
 }
 
-/* icon image */
 .field .icon {
     position: absolute;
     left: 10px;
@@ -249,31 +169,23 @@ header {
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    object-fit: contain;
     opacity: 0.85;
     pointer-events: none;
 }
 
-/* space for icon inside input */
-.field input,
-.field select {
+.field input, .field select {
     padding-left: 55px;
-    font-weight: bolder;
 }
 
 .field.area {
     grid-column: 1 / 4;
 }
 
-
-
 /* ----------SEATING OPTIONS---------- */
 
 .seating-options {
     padding: 50px 20px;
-    background:
-        linear-gradient(#0A0711F5, #0A0711F5),
-        url("images/Asset 1.png");
+    background: linear-gradient(#0A0711F5, #0A0711F5), url("images/Asset 1.png");
     background-repeat: repeat;
     background-size: 600px;
     text-align: center;
@@ -306,7 +218,6 @@ header {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    display: block;
 }
 
 .seating-card h3 {
@@ -334,57 +245,27 @@ footer {
 /* ----------MEDIA QUERIES---------- */
 
 @media screen and (min-width: 600px) {
-    
+    .address-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .address-content {
-        text-align: center;
-        width: 200px;
         justify-self: center;
         padding: 10px 20px;
-        z-index: 2;
     }
 
-    /* Address Box */
-    .address-box {
-        background-color: var(--oxblood);
-        margin: 0;
-        border-radius: 8px;
-        grid-row: 1;
-        grid-column: 1 / 6;
-        position: relative;
-        z-index: 1;
-    }
-
-    .address-button {
-        display: inline-block;
-        width: 140px;
-        padding: 10px 20px;
-        background-color: var(--muted-gold);
-        font-size: 14pt;
-        font-weight: 700;
-        border-radius: 5px;
-        grid-row: 2;
-        grid-column: 1 / 6;
-        position: relative;
-        justify-self: center;
-        z-index: 1;
-    }
-
-    /* Seating Grid (2 columns on 600px+) */
     .seating-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 
     .booking-form {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Ensure #requests textarea spans all 3 columns */
     #requests {
         grid-column: 1 / 4;
     }
 
-    /* Row 1: date, guests, location */
     #date {
         grid-column: 1 / 2;
     }
@@ -397,7 +278,6 @@ footer {
         grid-column: 3 / 4;
     }
 
-    /* Row 2: name, email, phone */
     #name {
         grid-column: 1 / 2;
     }
@@ -410,12 +290,6 @@ footer {
         grid-column: 3 / 4;
     }
 
-    /* Row 3: requests text area */
-    #requests {
-        grid-column: 1 / 4; /* Span the whole row */
-    }
-
-    /* Button row */
     .booking-form button {
         grid-column: 1 / 4;
         justify-self: center;
@@ -423,18 +297,8 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 900px) {
-    .reservation-hero {
-        min-height: 500px;
-    }
-
     .seating-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .request-field {
-        flex: 1 1 260px;
-    }
 }
-
