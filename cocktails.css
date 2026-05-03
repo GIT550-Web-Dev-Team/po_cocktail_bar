@@ -99,6 +99,11 @@ main {
     align-content: center;
 }
 
+.card-img-placeholder img {
+	width: 220px;
+    height: 280px;
+}
+
 /* ---------- TEXT ---------- */
 
 .cocktail-card h3 {
