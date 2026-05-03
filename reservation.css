@@ -103,7 +103,7 @@ header {
     text-align: center;
     width: 200px;
     justify-self: end;
-    padding: 10px 20px;
+    padding: 10px 0px;
     z-index: 2;
 }
 
@@ -134,6 +134,11 @@ header {
 }
 
 .address-button {
+    color: var(--text-bone);
+    text-decoration: none;
+}
+
+.address-button a {
     color: var(--text-bone);
     text-decoration: none;
 }
