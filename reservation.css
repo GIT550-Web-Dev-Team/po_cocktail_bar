@@ -191,12 +191,12 @@ header {
 .field select {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--smoke-violet);
+    background-color: var(--oxblood);
     color: var(--bone);
     border: 1px solid var(--muted-gold);
     padding: 14px 10px;
     font-size: 11pt;
-    border-radius: 5px;
+    border-radius: 3px;
     outline: none;
 }
 
