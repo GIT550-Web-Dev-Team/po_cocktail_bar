@@ -210,7 +210,7 @@ header {
     padding: 12px 20px;
     background-color: var(--muted-gold);
     border: none;
-    color: var(--obsidian);
+    color: var(--text-bone);
     font-size: 14pt;
     border-radius: 5px;
     cursor: pointer;
