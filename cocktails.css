@@ -119,7 +119,12 @@ main {
 }
 
 
-.
+.card details {
+	background-color: var(--oxblood);
+	padding: 30px;
+	height: 180px;
+	width: 200px;
+}
 
 
 /* ==================================================
