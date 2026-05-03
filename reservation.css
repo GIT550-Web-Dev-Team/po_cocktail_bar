@@ -168,11 +168,14 @@ header {
 }
 
 .booking-form {
-    width: 300px;
+    width: 100%; /* Make the form responsive */
+    max-width: 300px; /* Keep it at a maximum width */
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout */
     gap: 15px;
+    padding: 0 15px; /* Ensure form content doesn't touch the edges */
+    box-sizing: border-box;
 }
 
 /* shared input + select styling */
