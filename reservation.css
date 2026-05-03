@@ -170,25 +170,14 @@ header {
 .booking-form {
     max-width: 900px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 15px;
-    justify-content: center;
-    align-items: flex-start;
 }
 
-.field {
-    flex: 1 1 180px;
-    min-width: 180px;
-    position: relative;
-}
-
-.request-field {
-    flex: 1 1 100%;
-}
-
-.field input,
-.field select {
+/* shared input + select styling */
+.booking-form input,
+.booking-form select {
     width: 100%;
     box-sizing: border-box;
     background-color: var(--oxblood);
@@ -200,28 +189,32 @@ header {
     outline: none;
 }
 
-.field label {
-    display: block;
-    font-size: 11pt;
-    color: var(--bone);
-    margin-bottom: 6px;
-    text-align: left;
-    font-family: var(--font-body);
+/* placeholder styling */
+.booking-form input::placeholder,
+.booking-form select {
+    color: rgba(245, 240, 230, 0.7);
 }
 
+/* hover + focus */
+.booking-form input:hover,
+.booking-form select:hover,
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: var(--muted-gold);
+    box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
+}
+
+/* submit button */
 .booking-form button {
-    width: 180px;
+    width: 100%;
     padding: 12px 20px;
     background-color: var(--muted-gold);
     border: none;
-    color: var(--text-bone);
-    font-size: 16pt;
+    color: var(--obsidian);
+    font-size: 14pt;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 700;
-    text-decoration: none;
-    font-size: 14pt;
-    justify-self: center;
 }
 
 .booking-form button:hover {
