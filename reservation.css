@@ -416,6 +416,11 @@ footer {
     }
 
     /* Button row */
+    .booking-form {
+        grid-template-columns: repeat(3, 1fr);
+        width: 900px;
+    }
+
     .booking-form button {
         grid-column: 1 / 4;
         justify-self: center;
