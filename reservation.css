@@ -150,34 +150,18 @@ header {
 
 /* ----------BOOKING FORM---------- */
 
-.booking {
-    padding: 50px 20px;
-    background:
-        linear-gradient(#0A0711F5, #0A0711F5),
-        url("images/Asset 1.png");
-    background-repeat: repeat;
-    background-size: 600px;
-    text-align: center;
-}
-
-.booking h2 {
-    font-family: var(--font-header);
-    font-size: 27pt;
-    color: var(--bone);
-    margin-bottom: 25px;
-}
-
 .booking-form {
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Default to single column on mobile */
     gap: 15px;
 }
 
-/* shared input + select styling */
+/* Input + select styling */
 .booking-form input,
-.booking-form select {
+.booking-form select,
+.booking-form textarea {
     width: 100%;
     box-sizing: border-box;
     background-color: var(--oxblood);
@@ -189,22 +173,26 @@ header {
     outline: none;
 }
 
-/* placeholder styling */
-.booking-form input::placeholder,
-.booking-form select {
-    color: rgba(245, 240, 230, 0.7);
+/* Request textarea specific styling */
+.booking-form textarea {
+    min-height: 80px;
+    padding: 14px 10px 15px 55px; /* Adjust padding for icon */
+    resize: vertical;
+    font-weight: normal;  /* Optional */
 }
 
-/* hover + focus */
+/* On hover or focus */
 .booking-form input:hover,
 .booking-form select:hover,
+.booking-form textarea:hover,
 .booking-form input:focus,
-.booking-form select:focus {
+.booking-form select:focus,
+.booking-form textarea:focus {
     border-color: var(--muted-gold);
     box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
 }
 
-/* submit button */
+/* Button styling */
 .booking-form button {
     width: 100%;
     padding: 12px 20px;
@@ -222,26 +210,12 @@ header {
     color: var(--bone);
 }
 
-.booking-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--oxblood);
-    color: var(--text-bone);
-    border: 1px solid var(--ember);
-    padding: 14px 10px 15px 55px;
-    font-size: 11pt;
-    border-radius: 3px;
-    outline: none;
-    resize: vertical;
-    min-height: 80px;
-    font-weight: normal;
-}
-
+/* Styling for icons */
 .field {
     position: relative;
 }
 
-/* icon image */
+/* Icon inside the input fields */
 .field .icon {
     position: absolute;
     left: 10px;
@@ -254,15 +228,10 @@ header {
     pointer-events: none;
 }
 
-/* space for icon inside input */
+/* Add space for icon inside input/select fields */
 .field input,
 .field select {
     padding-left: 55px;
-    font-weight: bolder;
-}
-
-.field.area {
-    grid-column: 1 / 4;
 }
 
 .booking-form {
