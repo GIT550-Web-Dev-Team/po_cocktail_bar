@@ -226,7 +226,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     background-color: var(--oxblood);
-    color: var(--text-bone);
+    color: var(--bone);
     border: 1px solid var(--ember);
     padding: 14px 10px 15px 55px;
     font-size: 11pt;
@@ -234,6 +234,7 @@ header {
     outline: none;
     resize: vertical;
     min-height: 80px;
+    font-weight: normal;
 }
 
 .field {
@@ -400,7 +401,15 @@ footer {
         grid-column: 3 / 4;
     }
 
-    /* Requests Box (make it span all 3 columns) */
+    #requests {
+        grid-column: 1 / 4;
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
     #requests {
         grid-column: 1 / 4;
     }
