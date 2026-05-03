@@ -102,7 +102,7 @@ header {
 .address-content {
     text-align: center;
     width: 200px;
-    justify-self: center;
+    justify-self: end;
     padding: 10px 20px;
     z-index: 2;
 }
@@ -127,18 +127,18 @@ header {
     font-weight: 700;
     border-radius: 5px;
     grid-row: 2;
-    grid-column: 1 / 6;
+    grid-column: 3 / 6;
     position: relative;
     justify-self: center;
     z-index: 1;
 }
 
-.address-button a {
+.address-button {
     color: var(--text-bone);
     text-decoration: none;
 }
 
-.address-button a:hover {
+.address-button:hover {
     background-color: var(--ember);
     color: var(--bone);
 }
@@ -291,6 +291,39 @@ footer {
 
 @media screen and (min-width: 600px) {
     
+    .address-content {
+        text-align: center;
+        width: 200px;
+        justify-self: center;
+        padding: 10px 20px;
+        z-index: 2;
+    }
+
+    .address-box {
+        background-color: var(--oxblood);
+        margin: 0;
+        border-radius: 8px;
+        grid-row: 1;
+        grid-column: 1 / 6;
+        position: relative;
+        z-index: 1;
+    }
+
+    .address-button {
+        display: inline-block;
+        width: 140px;
+        padding: 10px 20px;
+        background-color: var(--muted-gold);
+        font-size: 14pt;
+        font-weight: 700;
+        border-radius: 5px;
+        grid-row: 2;
+        grid-column: 1 / 6;
+        position: relative;
+        justify-self: center;
+        z-index: 1;
+    }
+
     .seating-grid {
         grid-template-columns: repeat(2, 1fr);
     }
