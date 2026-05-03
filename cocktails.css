@@ -3,116 +3,113 @@
 ================================================== */
 
 :root {
-    --obsidian: #0A0711;
-    --oxblood: #961E1E;
-    --ember: #C85B29;
-    --smoke-violet: #3C3642;
-    --bone: #E5DDD1;
-    --text-bone: #DBDFDC;
-    --muted-gold: #B89A5A;
+	--obsidian: #0a0711;
+	--oxblood: #961e1e;
+	--ember: #c85b29;
+	--smoke-violet: #3c3642;
+	--bone: #e5ddd1;
+	--text-bone: #dbdfdc;
+	--muted-gold: #b89a5a;
 
-    --font-header: 'Trajan Pro', serif;
-    --font-body: "Roboto", "Open Sans", sans-serif;
+	--font-header: 'Trajan Pro', serif;
+	--font-body: 'Roboto', 'Open Sans', sans-serif;
 }
 
-
 body {
-    margin: 0;
-    font-family: var(--font-body);
-    background-color: var(--obsidian);
-    color: var(--text-bone);
+	margin: 0;
+	font-family: var(--font-body);
+	background-color: var(--obsidian);
+	color: var(--text-bone);
 }
 
 /* ==================================================
                     MENU SECTION
 ================================================== */
 
-
 main {
-    margin: 0 auto;
-    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url('../images/Asset 1.png');
-    background-repeat: repeat;
-    background-size: 600px;
+	margin: 0 auto;
+	background:
+		linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)),
+		url('../images/Asset 1.png');
+	background-repeat: repeat;
+	background-size: 600px;
 }
 
-
 .menu {
-    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
-    background-repeat: repeat;
-    background-size: 600px;
+	background:
+		linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)),
+		url('images/Asset 1.png');
+	background-repeat: repeat;
+	background-size: 600px;
 }
 
 .menu h1 {
-    font-family: var(--font-header);
-    font-size: 35pt;
-    background-color: var(--obsidian);
-    padding: 20px;
+	font-family: var(--font-header);
+	font-size: 35pt;
+	background-color: var(--obsidian);
+	padding: 20px;
 }
 
 .menu h2 {
-    font-family: var(--font-header);
-    font-size: 27pt;
-    padding: 50px 0 0;
+	font-family: var(--font-header);
+	font-size: 27pt;
+	padding: 50px 0 0;
 }
 
 /* ---------- CAROUSEL ---------- */
 
 .carousel-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    padding: 3rem 1.5rem;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+	padding: 3rem 1.5rem;
+	justify-content: space-evenly;
 }
 
 /* Optional scrollbar styling */
 .carousel-container::-webkit-scrollbar {
-    height: 8px;
+	height: 8px;
 }
 
 .carousel-container::-webkit-scrollbar-thumb {
-    background: var(--ember);
-    border-radius: 10px;
+	background: var(--ember);
+	border-radius: 10px;
 }
 
 /* ---------- CARD ---------- */
 
 .cocktail-card {
-    background: linear-gradient(
-        to bottom,
-        var(--oxblood),
-        var(--obsidian)
-    );
-    border-radius: 20px;
-    padding: 20px;
-    text-align: left;
+	background: linear-gradient(to bottom, var(--oxblood), var(--obsidian));
+	border-radius: 20px;
+	padding: 20px;
+	text-align: left;
 }
 
 .card-img-placeholder {
-    width: 100%;
-    height: 300px;
-    border-radius: 15px;
-    margin-bottom: 15px;
+	width: 100%;
+	height: 300px;
+	border-radius: 15px;
+	margin-bottom: 15px;
 }
 
 /* ---------- TEXT ---------- */
 
 .cocktail-card h3 {
-    font-family: var(--font-header);
-    font-size: 20pt;
-    margin-bottom: 10px;
+	font-family: var(--font-header);
+	font-size: 20pt;
+	margin-bottom: 10px;
 }
 
 .cocktail-card em {
-    color: var(--ember);
-    font-style: normal;
-    font-size: 14pt;
+	color: var(--ember);
+	font-style: normal;
+	font-size: 14pt;
 }
 
 .cocktail-card p {
-    font-size: 12pt;
-    margin: 5px 0;
+	font-size: 12pt;
+	margin: 5px 0;
 }
 
 /* ==================================================
@@ -120,37 +117,39 @@ main {
 ================================================== */
 
 footer {
-    background-color: var(--obsidian);
-    border-top: 1px solid var(--smoke-violet);
-    text-align: left;
+	background-color: var(--obsidian);
+	border-top: 1px solid var(--smoke-violet);
+	text-align: left;
 }
 
 .footer-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	max-width: 800px;
 }
 
-.footer-address h2, .footer-social h2 {
-    font-size: 1.2rem;
-    color: var(--muted-gold);
-    margin-bottom: 0.8rem;
+.footer-address h2,
+.footer-social h2 {
+	font-size: 1.2rem;
+	color: var(--muted-gold);
+	margin-bottom: 0.8rem;
 }
 
-.footer-subhead, .footer-contact-head {
-    font-size: 1.2rem;
-    color: var(--muted-gold);
-    margin: 1.5rem 0 0.5rem 0;
+.footer-subhead,
+.footer-contact-head {
+	font-size: 1.2rem;
+	color: var(--muted-gold);
+	margin: 1.5rem 0 0.5rem 0;
 }
 
 footer p {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
 }
 
 footer a:hover {
-    color: var(--ember);
+	color: var(--ember);
 }
 
 /* ==================================================
@@ -158,42 +157,40 @@ footer a:hover {
 ================================================== */
 
 @media (max-width: 600px) {
-    .carousel-container {
-        gap: 15px;
-    }
+	.carousel-container {
+		gap: 15px;
+	}
 
-    .cocktail-card {
-        min-width: 240px;
-    }
+	.cocktail-card {
+		min-width: 240px;
+	}
 
-    .menu h1 {
-        font-size: 28pt;
-    }
+	.menu h1 {
+		font-size: 28pt;
+	}
 }
 
-
 @media (min-width: 900px) {
+	.carousel-container {
+		flex-direction: row;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		gap: 20px;
+	}
 
-    .carousel-container {
-        flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 20px;
-    }
+	.cocktail-card {
+		min-width: 280px;
+		max-width: 280px;
+		flex-shrink: 0;
+		scroll-snap-align: start;
+	}
 
-    .cocktail-card {
-        min-width: 280px;
-        max-width: 280px;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-    }
+	.carousel-container::-webkit-scrollbar {
+		height: 8px;
+	}
 
-    .carousel-container::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    .carousel-container::-webkit-scrollbar-thumb {
-        background: var(--ember);
-        border-radius: 10px;
-    }
+	.carousel-container::-webkit-scrollbar-thumb {
+		background: var(--ember);
+		border-radius: 10px;
+	}
 }
