@@ -69,51 +69,55 @@
     <section class="booking" id="reservation-booking">
         <h2>Book a Table</h2>
 
+        <form class="booking-form" id="booking-form">
+
             <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
-                <input type="datetime-local" id="date" name="date" required placeholder="Date">
+                <input type="datetime-local" id="date" name="date" required>
+                <label for="date">Date</label>
             </div>
 
             <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
                 <select id="guests" name="guests" required>
-                    <option value="" disabled selected>Guests</option>
+                    <option value="" disabled selected></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4+</option>
                 </select>
+                <label for="guests">Guests</label>
             </div>
 
             <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
                 <select id="location" name="location" required>
-                    <option value="" disabled selected>Location</option>
+                    <option value="" disabled selected></option>
                     <option value="indoor">Indoor</option>
                     <option value="outdoor">Outdoor</option>
                     <option value="bar">Bar</option>
                     <option value="no-preference">No Preference</option>
                 </select>
+                <label for="location">Location</label>
             </div>
 
             <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
-                <input type="text" id="name" name="name" required placeholder="Name">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label>
             </div>
 
             <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
-                <input type="email" id="email" name="email" required placeholder="Email">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
             </div>
 
             <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
-                <input type="tel" id="phone" name="phone" required placeholder="Phone">
+                <input type="tel" id="phone" name="phone"
+                    maxlength="14"
+                    required>
+                <label for="phone">Phone</label>
             </div>
 
-            <div class="field">
-                <img class="icon" src="images/craft_icon.jpg" alt="">
-                <input type="text" id="requests" name="requests" placeholder="Requests">
+            <div class="field request-field">
+                <input type="text" id="requests" name="requests">
+                <label for="requests">Requests</label>
             </div>
 
             <button type="submit">Book</button>
