@@ -37,78 +37,86 @@
     <div class="calendar">
             <section id="calendar">
                 <h1>What's Happening</h1>
-                <div class="carousel-container">
-                    
-                    <section class="calendar-card">
-                        <h2>Fri</h2>
-                        <p><em>5/1</em></p>
-                        <p>Soft Launch</p>
+                
+                <div class="events-layout">
+
+                    <section class="calendar-container">
+                        
+                        <div class="calendar-header">
+                            <h3>May 2026</h3>
+                            <div class="calendar-nav">
+                                <span>&lt;</span>
+                                <span>&gt;</span>
+                                <div class="nav-dot"></div> 
+                            </div>
+                        </div>
+                
+                        <div class="calendar-grid">
+                            <div class="day-name">Mo</div>
+                            <div class="day-name">Tu</div>
+                            <div class="day-name">We</div>
+                            <div class="day-name">Th</div>
+                            <div class="day-name">Fr</div>
+                            <div class="day-name">Sa</div>
+                            <div class="day-name">Su</div>
+                
+                            <div class="date-cell out-of-month">27</div>
+                            <div class="date-cell out-of-month">28</div>
+                            <div class="date-cell out-of-month">29</div>
+                            <div class="date-cell out-of-month">30</div>
+                            <div class="date-cell">1</div>
+                            <div class="date-cell">2</div>
+                            <div class="date-cell">3</div>
+                
+                            <div class="date-cell">4</div>
+                            <div class="date-cell">5</div>
+                            <div class="date-cell">6</div>
+                            <div class="date-cell">7</div>
+                            <div class="date-cell">8</div>
+                            <div class="date-cell">9</div>
+                            <div class="date-cell">10</div>
+                
+                            <div class="date-cell">11</div>
+                            <div class="date-cell">12</div>
+                            <div class="date-cell">13</div>
+                            <div class="date-cell">14</div>
+                            <div class="date-cell">15</div>
+                            <div class="date-cell">16</div>
+                            <div class="date-cell">17</div>
+                
+                            <div class="date-cell">18</div>
+                            <div class="date-cell">19</div>
+                            <div class="date-cell">20</div>
+                            <div class="date-cell">21</div>
+                            <div class="date-cell">22</div>
+                            <div class="date-cell">23</div>
+                            <div class="date-cell">24</div>
+                
+                            <div class="date-cell">25</div>
+                            <div class="date-cell">26</div>
+                            <div class="date-cell">27</div>
+                            <div class="date-cell">28</div>
+                            <div class="date-cell">29</div>
+                            <div class="date-cell">30</div>
+                            <div class="date-cell">31</div>
+                        </div>
                     </section>
-
-                    <section class="calendar-card">
-                        <h2>Sat</h2>
-                        <p><em>5/2</em></p>
-                        <p>Soft Launch</p>
+                
+                    <section class="event-detail-card">
+                        <img class="event-image-box" src="images/Photo_Video_GIT450_Bar_V1.png" alt="Pō Event">
+                        
+                        <div class="event-header-row">
+                            <div class="event-title-group">
+                                <h3>NO EVENTS SCHEDULED</h3>
+                                <p>--</p>
+                            </div>
+                            <div class="event-date"></div>
+                        </div>
+                
+                        <p class="event-desc">Check back later for more immersive experiences.</p>
                     </section>
-
-                    <section class="calendar-card">
-                        <h2>Sun</h2>
-                        <p><em>5/3</em></p>
-                        <p>Soft Launch</p>
-                    </section>
-
-                    <section class="calendar-card">
-                        <h2>Mon</h2>
-                        <p><em>5/4</em></p>
-                        <p>Soft Launch</p>
-                    </section>
-
-                    <section class="calendar-card">
-                        <h2>Tues</h2>
-                        <p><em>5/5</em></p>
-                        <p>Soft Launch</p>
-                    </section>
-
-                    <section class="calendar-card">
-                        <h2>Wed</h2>
-                        <p><em>5/6</em></p>
-                        <p>Live Jazz Night</p>
-                    </section>
-                    </div>
-            </section>
-
-
-    <section class="events">
-        <h2>Shows</h2>
-
-        <div class="event-list">
-            <div class="event-item">
-                <img src="images/Jazz band.png" alt="Dancers">
-                <div class="event-details">
-                    <p class="date">May 10</p>
-                    <p class="name">Velvet Volcanics</p>
-                    <p class="cost">Free entry</p>
+                
                 </div>
-            </div>
-
-            <div class="event-item">
-                <img src="images/fire dance.png" alt="Dancers">
-                <div class="event-details">
-                    <p class="date">May 17</p>
-                    <p class="name">Siva Afi</p>
-                    <p class="cost">$15 entry</p>
-                </div>
-            </div>
-
-            <div class="event-item">
-                <img src="images/dancers.png" alt="Dancers">
-                <div class="event-details">
-                    <p class="date">May 26</p>
-                    <p class="name">Pā‘ina</p>
-                    <p class="cost">$20 entry</p>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 
@@ -144,6 +152,70 @@
         
     </div>
 </footer>
+
+<script>
+    const eventData = {
+        "10": { 
+            title: "The Velvet Volcanics", 
+            price: "FREE", 
+            date: "5/10", 
+            desc: "Step into the shadows and let the sultry sounds of The Velvet Volcanics wash over you. This premier jazz ensemble blends classic lounge rhythms with a slow, smoldering energy that perfectly complements our dark spirits and smoked cocktails. Expect deep basslines, brass that bites, and an atmosphere thick with rhythm. Claim a leather booth, order a Volcanic Ember, and let the brass section carry you into the night.",
+            img: "images/Jazz band.png"
+        },
+        "16": { 
+            title: "Siva Afi", 
+            price: "Free", 
+            date: "5/16", 
+            desc: "Witness the mesmerizing power of the flame. Our Siva Afi performance brings the ancient, adrenaline-fueled Polynesian art of the fire knife into the heart of the lounge. Watch as expert dancers weave blazing torches through the dark, keeping perfect rhythm to the pounding of traditional drums. It is a breathtaking display of skill, danger, and island warrior heritage—best enjoyed with a cold Māui in hand.",
+            img: "images/fire dance.png" 
+        },
+        "24": { 
+            title: "Pā‘ina", 
+            price: "$20 ENTRY", 
+            date: "5/24", 
+            desc: "Gather, celebrate, and awaken your mana. Our Pāʻina is an exclusive, upscale take on the traditional island gathering. Join us for a vibrant night of curated small bites, limited-batch rum tastings, and an electric community atmosphere. It is an evening dedicated to good fortune, deep conversations, and the shared warmth of the islands, all set against an immersive, transportive soundtrack.",
+            img: "images/dancers.png" 
+        }
+    };
+
+    const dateCells = document.querySelectorAll('.date-cell:not(.out-of-month)');
+    const cardImg = document.querySelector('.event-image-box'); 
+    const cardTitle = document.querySelector('.event-title-group h3');
+    const cardPrice = document.querySelector('.event-title-group p');
+    const cardDate = document.querySelector('.event-date');
+    const cardDesc = document.querySelector('.event-desc');
+
+    dateCells.forEach(cell => {
+        const dayNumber = cell.textContent.trim();
+
+        if (eventData[dayNumber]) {
+            cell.innerHTML = `${dayNumber} <span class="event-dot"></span>`;
+        }
+
+        cell.addEventListener('click', () => {
+            document.querySelectorAll('.date-cell').forEach(c => c.classList.remove('active-date'));
+            cell.classList.add('active-date');
+
+            const event = eventData[dayNumber];
+            
+            if (event) {
+                // WE HAVE A SHOW! Swap the text AND the image.
+                cardTitle.textContent = event.title;
+                cardPrice.textContent = event.price;
+                cardDate.textContent = event.date;
+                cardDesc.textContent = event.desc;
+                cardImg.src = event.img;
+            } else {
+                // NO SHOW TODAY. Swap back to the default fallback look.
+                cardTitle.textContent = "NO EVENTS SCHEDULED";
+                cardPrice.textContent = "--";
+                cardDate.textContent = `5/${dayNumber}`;
+                cardDesc.textContent = "Check back later for more immersive experiences.";
+                cardImg.src = "images/Photo_Video_GIT450_Bar_V1.png"; // Swaps to the default photo
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
