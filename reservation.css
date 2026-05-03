@@ -198,10 +198,8 @@ header {
 /* hover + focus */
 .booking-form input:hover,
 .booking-form select:hover,
-.booking-form textarea:hover
 .booking-form input:focus,
-.booking-form select:focus, 
-.booking-form textarea:focus {
+.booking-form select:focus {
     border-color: var(--muted-gold);
     box-shadow: 0 0 6px rgba(201, 169, 91, 0.25);
 }
@@ -376,11 +374,6 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Ensure #requests textarea spans all 3 columns */
-    #requests {
-        grid-column: 1 / 4;
-    }
-
     /* Row 1: date, guests, location */
     #date {
         grid-column: 1 / 2;
@@ -407,11 +400,6 @@ footer {
         grid-column: 3 / 4;
     }
 
-    /* Row 3: requests text area */
-    #requests {
-        grid-column: 1 / 4; /* Span the whole row */
-    }
-
     /* Button row */
     .booking-form {
         grid-template-columns: repeat(3, 1fr);
@@ -435,8 +423,5 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .request-field {
-        flex: 1 1 260px;
-    }
 }
 
