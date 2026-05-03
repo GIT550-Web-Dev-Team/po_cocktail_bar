@@ -328,7 +328,7 @@ footer {
     }
 
     .booking-form {
-        max-width: 900px;
+        width: 900px;
         grid-template-columns: repeat(3, 1fr);
     }
 
