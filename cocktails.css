@@ -79,6 +79,12 @@ main {
 
 /* ---------- CARD ---------- */
 
+.cocktail-card,
+.cocktail-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(200, 91, 41, 0.9);
+}
+
 .cocktail-card {
 	background: linear-gradient(to bottom, var(--oxblood), var(--obsidian));
 	border-radius: 20px;
