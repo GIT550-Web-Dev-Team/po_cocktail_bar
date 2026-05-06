@@ -341,6 +341,11 @@ header {
     color: var(--text-bone);
 }
 
+.seating-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(200, 91, 41, 0.9);
+}
+
 /* ----------FOOTER---------- */
 
 footer {
