@@ -109,7 +109,7 @@ main {
 
 .cocktail-card em {
 	color: var(--ember);
-	font-style: normal;
+	font-style: italic;
 	font-size: 14pt;
 }
 
