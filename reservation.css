@@ -65,8 +65,8 @@ header {
 }
 
 .address-image {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
     grid-row: 1;
@@ -77,8 +77,8 @@ header {
 }
 
 .address-image img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
     border: 30px solid var(--oxblood);
@@ -94,16 +94,17 @@ header {
     margin: 0;
     border-radius: 8px;
     grid-row: 1;
-    grid-column: 1 / 6;
+    grid-column: 1 / -1; 
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .address-content {
     text-align: center;
     width: 200px;
-    justify-self: end;
-    padding: 10px 0px;
+    padding: 10px;
     z-index: 2;
 }
 
@@ -187,6 +188,24 @@ header {
     font-size: 11pt;
     border-radius: 3px;
     outline: none;
+    height: 52px;
+}
+
+/* THE SAFARI OVERRIDE FOR DROPDOWNS */
+.booking-form select {
+    -webkit-appearance: none; 
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%23DBDFDC" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 14px;
+        padding-right: 40px; 
+}
+
+.field input,
+.field select {
+    padding-left: 55px; 
+    font-weight: bolder;
 }
 
 /* placeholder styling */
@@ -239,6 +258,9 @@ header {
 
 .field {
     position: relative;
+    width: 100%;
+    /* THE FIX: Strips the grid's ability to stretch this box */
+    min-width: 0;
 }
 
 /* icon image */
@@ -261,10 +283,6 @@ header {
     font-weight: bolder;
 }
 
-input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23DBDFDC" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
-    cursor: pointer;
-}
 
 /* ----------SEATING OPTIONS---------- */
 
@@ -334,23 +352,23 @@ footer {
 
 @media screen and (min-width: 600px) {
     
-    .address-content {
-        text-align: center;
-        width: 200px;
-        justify-self: center;
-        padding: 10px 20px;
-        z-index: 2;
-    }
-
-    /* Address Box */
     .address-box {
         background-color: var(--oxblood);
         margin: 0;
         border-radius: 8px;
         grid-row: 1;
-        grid-column: 1 / 6;
+        grid-column: 1 / -1;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .address-content {
+        text-align: center;
+        width: 200px;
+        padding: 10px 20px;
+        z-index: 2;
     }
 
     .address-button {
@@ -390,6 +408,7 @@ footer {
     #location {
         grid-column: 3 / 4;
     }
+
 
     /* Row 2: name, email, phone */
     #name {
