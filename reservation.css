@@ -147,6 +147,8 @@ header {
 .address-button:hover {
     background-color: var(--ember);
     color: var(--bone);
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 
 /* ----------BOOKING FORM---------- */
@@ -239,6 +241,8 @@ header {
 .booking-form button:hover {
     background-color: var(--ember);
     color: var(--bone);
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 
 .booking-form textarea {
@@ -339,6 +343,11 @@ header {
     line-height: 1.5;
     padding: 0 20px;
     color: var(--text-bone);
+}
+
+.seating-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(200, 91, 41, 0.9);
 }
 
 /* ----------FOOTER---------- */

@@ -79,11 +79,17 @@ main {
 
 /* ---------- CARD ---------- */
 
+.cocktail-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(200, 91, 41, 0.9);
+}
+
 .cocktail-card {
 	background: linear-gradient(to bottom, var(--oxblood), var(--obsidian));
 	border-radius: 20px;
 	padding: 20px;
 	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-img-placeholder {
@@ -103,7 +109,7 @@ main {
 
 .cocktail-card em {
 	color: var(--ember);
-	font-style: normal;
+	font-style: italic;
 	font-size: 14pt;
 }
 
